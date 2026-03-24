@@ -29,6 +29,13 @@ class Studio : Logement
         }
         Console.WriteLine("Le loyer est: " + loyer);
     }
-
+    public bool getmeuble()
+    {
+        return meuble;
+    }   
+    public void setmeuble(bool meuble)
+    {
+        this.meuble = meuble;
+    }
 
 }

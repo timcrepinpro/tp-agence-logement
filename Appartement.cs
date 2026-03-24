@@ -1,6 +1,6 @@
 class Appartement : Logement
 {
-    public int nbrpiece { get; set; }
+    protected int nbrpiece { get; set; }
 
     public Appartement(string reference, string adresse, int superficie, double loyer, bool disponible, int nbrpiece)
         : base(reference, adresse, superficie, loyer, disponible)
@@ -20,7 +20,17 @@ class Appartement : Logement
         loyer += nbrpiece * 100;
         Console.WriteLine("Le loyer est: " + loyer);
     }
-
+    public int getnbrpiece()
+    {
+        return nbrpiece;
+    }
+    public void setnbrpiece(int nbr)
+    {
+        if(nbr > 0)
+        {
+            this.nbrpiece = nbr;
+        }
+    }
 
     
 }

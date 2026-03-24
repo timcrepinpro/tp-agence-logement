@@ -19,4 +19,15 @@ class Maison : Logement
         loyer += surfacejardin * 10;
         Console.WriteLine("Le loyer est: " + loyer);
     }
+    public int getsurfaceexterieur()
+    {
+        return surfacejardin;
+    }
+    public void setsurfaceexterieur(int surface)
+    {
+        if(surface > 0)
+        {
+            this.surfacejardin = surface;
+        }
+    }
 }

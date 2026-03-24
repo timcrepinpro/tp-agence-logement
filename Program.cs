@@ -66,17 +66,23 @@ class Program
             {
                 appartement.afficher();
                 appartement.calculerLoyer();
+                appartement.getnbrpiece();
             }
             else if(logement is Maison maison)
             {
                 maison.afficher();
                 maison.calculerLoyer();
+                maison.getsurfaceexterieur();
             }
             else if(logement is Studio studio)
             {
                 studio.afficher();
                 studio.calculerLoyer();
+                studio.getmeuble();
             }
+
         }
-    }
+        
+
+        }
 }
