@@ -41,6 +41,20 @@ class Program
             new ContratLocation("CONTRAT003", new Locataire("alex","colpin", "colpin@mail.com"), m1, 30, 50),
             new ContratLocation("CONTRAT004", new Locataire("coton eyes","joe", "john.doe@example.com"), s1, 0, 50)
         };
+        Agence agence = new Agence();
+        agence.AjouterLogement(l1);
+        agence.AjouterLogement(a1);
+        agence.AjouterLogement(m1);
+        agence.AjouterLogement(s1);
+        agence.AfficherLogements();
+        agence.AjouterLocataire(new Locataire("coton eyes","joe", "john.doe@example.com"));
+        agence.AjouterLocataire(new Locataire("colpin,","alex", "alex@mail.com"));
+        agence.AjouterLocataire(new Locataire("alex","colpin", "colpin@mail.com"));
+        agence.AjouterContrat(new ContratLocation("CONTRAT001", new Locataire("coton eyes","joe", "john.doe@example.com"), l1, 30, 50));
+        agence.AjouterContrat(new ContratLocation("CONTRAT002", new Locataire("colpin,","alex", "alex@mail.com"), a1, 30, 50));
+        agence.AjouterContrat(new ContratLocation("CONTRAT003", new Locataire("alex","colpin", "colpin@mail.com"), m1, 30, 50));
+        agence.AjouterContrat(new ContratLocation("CONTRAT004", new Locataire("coton eyes","joe", "john.doe@example.com"), s1, 0, 50));
+        agence.AjouterContrat(new ContratLocation("CONTRAT004", new Locataire("coton eyes","iyuriuqhg", "john.doe@example.com"), s1, 0, 50));
 
 
         foreach (var logement in logements)
