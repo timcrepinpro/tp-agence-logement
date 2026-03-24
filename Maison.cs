@@ -13,4 +13,10 @@ class Maison : Logement
         Console.WriteLine($"Surface du jardin: {surfacejardin} m²");
     }
 
+    public override void calculerLoyer()
+    {
+        double loyer = loyerbase;
+        loyer += surfacejardin * 10;
+        Console.WriteLine("Le loyer est: " + loyer);
+    }
 }

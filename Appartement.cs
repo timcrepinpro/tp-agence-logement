@@ -14,6 +14,12 @@ class Appartement : Logement
         Console.WriteLine($"Nombre de pièces: {nbrpiece}");
         
     }
+    public override void calculerLoyer()
+    {
+        double loyer = loyerbase;
+        loyer += nbrpiece * 100;
+        Console.WriteLine("Le loyer est: " + loyer);
+    }
 
 
     

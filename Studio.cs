@@ -20,6 +20,15 @@ class Studio : Logement
             Console.WriteLine("Le studio n'est pas meublé.");
         }
     }
+    public override void calculerLoyer()
+    {
+        double loyer = loyerbase;
+        if(meuble)
+        {
+            loyer += 50;
+        }
+        Console.WriteLine("Le loyer est: " + loyer);
+    }
 
 
 }

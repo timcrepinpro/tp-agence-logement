@@ -21,7 +21,7 @@ class Logement
         
         
     }
-    public void calculerLoyer()
+    public virtual void calculerLoyer()
     {
         double loyer = loyerbase;
         /*
