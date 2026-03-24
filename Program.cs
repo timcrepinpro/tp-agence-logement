@@ -19,5 +19,31 @@ class Program
         Studio s1 = new Studio("REF005", "654 Avenue de la Liberté", 30, 400, true, true);
         s1.afficher();
         s1.calculerLoyer();
+
+        List<Logement> logements = new List<Logement> { 
+            new Logement("REF006", "123 Rue de la Paix", 50, 500, true),
+            new Appartement("REF007", "456 Avenue des Champs", 80, 800, true, 3),
+            new Maison("REF008", "789 Boulevard Saint-Michel", 120, 1200, true, 50),
+            new Studio("REF009", "321 Rue de la République", 30, 400, true, true)
+        };
+
+        foreach (var logement in logements)
+        {
+            if(logement is Appartement appartement)
+            {
+                appartement.afficher();
+                appartement.calculerLoyer();
+            }
+            else if(logement is Maison maison)
+            {
+                maison.afficher();
+                maison.calculerLoyer();
+            }
+            else if(logement is Studio studio)
+            {
+                studio.afficher();
+                studio.calculerLoyer();
+            }
+        }
     }
 }
