@@ -19,4 +19,8 @@ class Locataire
     {
         Console.WriteLine($"Locataire: {prenom} {nom}, Téléphone: {telephone}");
     }
+    public override string ToString()
+    {
+        return $"Locataire: {prenom} {nom}, Téléphone: {telephone}";
+    }
 }

@@ -65,5 +65,10 @@ class Logement
         return loyerbase;
     }
 
+    public override string ToString()
+    {
+        return $"Logement: {reference}, Adresse: {adresse}, Surface: {surface} m², Loyer de base: {loyerbase}, Disponible: {disponible}";
+    }
+
     
 }

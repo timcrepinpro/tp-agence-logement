@@ -37,6 +37,9 @@ class Program
             new Locataire("alex","colpin", "colpin@mail.com")
         };
 
+        Locataire loc1 = new Locataire("coton eyes","joe", "john.doe@example.com");
+
+
         List<ContratLocation> contrats = new List<ContratLocation>
         {
             new ContratLocation("CONTRAT001", new Locataire("coton eyes","joe", "john.doe@example.com"), l1, 30, 50),
@@ -82,7 +85,8 @@ class Program
             }
 
         }
-        
+        Console.WriteLine(l1.ToString()); 
+        Console.WriteLine(loc1.ToString());
 
-        }
+    }
 }
