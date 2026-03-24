@@ -19,6 +19,9 @@ class Program
         Studio s1 = new Studio("REF005", "654 Avenue de la Liberté", 30, 400, true, true);
         s1.afficher();
         s1.calculerLoyer();
+        s1.setloyerbase(350);
+        s1.calculerLoyer();
+
 
         List<Logement> logements = new List<Logement> { 
             new Logement("REF006", "123 Rue de la Paix", 50, 500, true),

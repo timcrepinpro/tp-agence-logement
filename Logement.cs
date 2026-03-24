@@ -53,6 +53,17 @@ class Logement
         Console.WriteLine("Loyer de base: " + loyerbase);
         Console.WriteLine("Disponible: " + disponible);
     }
+    public void setloyerbase(double loyer)
+    {
+        if(loyer > 0)
+        {
+            this.loyerbase = loyer;
+        }
+    }
+    public double getloyerbase()
+    {
+        return loyerbase;
+    }
 
     
 }

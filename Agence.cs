@@ -43,4 +43,15 @@ class Agence
             Console.WriteLine();
         }
     }
+    public void AfficherLogementsDisponibles()
+    {
+        foreach (var logement in logements)
+        {
+            if (logement.getdisponible())
+            {
+                logement.afficher();
+                Console.WriteLine();
+            }
+        }
+    }
 }
