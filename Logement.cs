@@ -21,6 +21,14 @@ class Logement
         
         
     }
+    public void setdisponible(bool dispo)
+    {
+        this.disponible = dispo;
+    }
+    public bool getdisponible()
+    {
+        return disponible;
+    }
     public virtual void calculerLoyer()
     {
         double loyer = loyerbase;

@@ -27,6 +27,22 @@ class Program
             new Studio("REF009", "321 Rue de la République", 30, 400, true, true)
         };
 
+        List<Locataire> locataires = new List<Locataire>
+        {
+            new Locataire("coton eyes","joe", "john.doe@example.com"),
+            new Locataire("colpin,","alex", "alex@mail.com"),
+            new Locataire("alex","colpin", "colpin@mail.com")
+        };
+
+        List<ContratLocation> contrats = new List<ContratLocation>
+        {
+            new ContratLocation("CONTRAT001", new Locataire("coton eyes","joe", "john.doe@example.com"), l1, 30, 50),
+            new ContratLocation("CONTRAT002", new Locataire("colpin,","alex", "alex@mail.com"), a1, 30, 50),
+            new ContratLocation("CONTRAT003", new Locataire("alex","colpin", "colpin@mail.com"), m1, 30, 50),
+            new ContratLocation("CONTRAT004", new Locataire("coton eyes","joe", "john.doe@example.com"), s1, 0, 50)
+        };
+
+
         foreach (var logement in logements)
         {
             if(logement is Appartement appartement)

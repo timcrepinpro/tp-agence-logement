@@ -1,17 +1,17 @@
-class Loccataire
+class Locataire
 {
     private string nom{ get; set; }
     private string prenom{ get; set; }
 
     private string telephone{ get; set; }
 
-    public Loccataire(string nom, string prenom, string telephone)
+    public Locataire(string nom, string prenom, string telephone)
     {
         this.nom = nom;
         this.prenom = prenom;
         this.telephone = telephone;
     }
-    public Loccataire()
+    public Locataire()
     {
     }
 
